@@ -9,3 +9,4 @@ Nachdem das Modul erworben und bezahlt wurde wird automatisch eine Lizenz in Ihr
    :maxdepth: 1
 
    license
+   install

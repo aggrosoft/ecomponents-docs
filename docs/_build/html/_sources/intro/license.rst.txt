@@ -49,3 +49,19 @@ Wenn Sie die Domain ändern ist das Modul auf der vorherigen Domain nicht mehr v
 Gültig ab/bis
 -------------
 Für zeitbegrenzte Lizenzen wird hier das Gültigkeitsdatum angezeigt.
+
+Kostenlose Updates
+----------------------
+Für ein gekauftes Modul erhalten Sie 1 Jahr lang Updates und Support ab Kaufdatum, wenn Sie für ein weiteres Jahr
+verlängern möchten können klicken Sie auf :guilabel:`verlängern`.
+
+Lizenzdatei
+------------
+Über die Schaltfläche :guilabel:`herunterladen` können Sie die Lizenzdatei herunterladen, diese Datei wird nach der
+Installation in das ``license`` Verzeichnis des Moduls hochgeladen.
+
+Modul Dateien
+-------------
+Je nach Verfügbarkeit können Sie hier die Rohmodul Dateien für eine manuelle Installation herunterladen, wir unterstützen
+jedoch nur die Installation über composer und unseren Paketserver. Für Installationen die auf einem anderen Weg erfolgen
+können wir keinen Support anbieten.

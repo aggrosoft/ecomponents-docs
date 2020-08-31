@@ -16,6 +16,7 @@ einfach an unseren Support unter hilfe@aggrosoft.de
    :maxdepth: 2
 
    /intro/index
+   /modules/index
 
 
 Weiterführende Links
