@@ -2,6 +2,10 @@
 Upload Modul
 #####################
 
+Installation
+============
+Siehe :doc:`/intro/install`
+
 Einstellungen
 =============
 

@@ -38,6 +38,13 @@ Nachdem das Repository konfiguriert wurde können Sie zukünftig Module einfach 
 
 Den notwendigen Befehl bzw. Paketnamen finden Sie in den :doc:`Lizenzdetails <license>` des Moduls
 
+Lizenz hochladen
+==================
+
+Laden Sie die :doc:`Modullizenz <license>` aus Ihrem Konto herunter und speichern Sie die Datei **unverändert** und mit der Endung .lic
+im Modulordner ab - z.B. ``source/modules/agupload/license/``
+
+
 Modul installieren
 ==================
 
