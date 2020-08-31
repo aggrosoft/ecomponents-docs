@@ -43,6 +43,15 @@ diese Einstellunge gesetzt werden. Geben Sie eine Endung pro Zeile an z.B.
     .png
     .pdf
 
+Artikel konfigurieren
+=====================
+Füllen Sie für die Artikel bei denen ein Upload möglich sein soll das Feld :guilabel:`Min. Uploads`
+bzw. :guilabel:`Max. Uploads` aus. Wenn Sie :guilabel:`Min. Uploads` angeben muss der Kunde im Warenkorb
+mindestens diese Anzahl an Dateien hochladen bevor er fortfahren kann. :guilabel:`Max. Uploads` bestimmt
+wie viele Dateien der Kunde maximal hochladen darf.
+
+Es muss mindestens eines der Felder gesetzt werden damit die Uploadmöglichkeit erscheint.
+
 Cron Job
 =============
 Um nicht von Kunden bestellte Dateien vom Server zu entfernen raten wir Ihnen einen Cronjob einzurichten der
