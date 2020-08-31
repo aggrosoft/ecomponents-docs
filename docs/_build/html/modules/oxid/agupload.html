@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="de" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Upload Modul &mdash; Ecomponents  Dokumentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://docs.ecomponents.de/modules/oxid/agupload.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/js/custom.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" />
+    <link rel="search" title="Suche" href="../../search.html" />
+    <link rel="prev" title="Modulhandbücher" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Dokumentation durchsuchen" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhalt</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">Einführung</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Modulhandbücher</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Upload Modul</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#einstellungen">Einstellungen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#upload-dateipfad">Upload Dateipfad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minimale-dateigrosze">Minimale Dateigröße</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#maximale-dateigrosze">Maximale Dateigröße</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#erlaubte-dateitypen">Erlaubte Dateitypen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cron-job">Cron Job</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ecomponents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Modulhandbücher</a> &raquo;</li>
+        
+      <li>Upload Modul</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/aggrosoft/ecomponents-docs/blob/master/docs/modules/oxid/agupload.rst" class="fa fa-github"> Auf GitHub bearbeiten</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upload-modul">
+<h1>Upload Modul<a class="headerlink" href="#upload-modul" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="einstellungen">
+<h2>Einstellungen<a class="headerlink" href="#einstellungen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="upload-dateipfad">
+<h3>Upload Dateipfad<a class="headerlink" href="#upload-dateipfad" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die vom Kunden hochgeladenen Dateien werden unter diesem Pfad abgelegt, der Pfad ist ausgehend vom <code class="docutils literal notranslate"><span class="pre">source</span></code> Verzeichnis
+des Shops. Wir raten aus Datenschutzgründen dazu den Pfad mit eine Verzeichnisschutz zu versehen, dadurch wird er durch
+Zugriff durch Dritte geschützt.</p>
+<p>Wenn der Pfad nicht existiert wird versucht ihn anzulegen, innerhalb dieses Ordners wird ein <code class="docutils literal notranslate"><span class="pre">ordered</span></code> Unterordner erstellt,
+in diesen Ordner werden Dateien verschoben die zu einer Bestellung gehören.</p>
+<div class="admonition attention">
+<p class="admonition-title">Achtung</p>
+<p>Der Pfad darf nicht mit einem Slash beginnen und muss mit einem Slash enden</p>
+</div>
+</div>
+<div class="section" id="minimale-dateigrosze">
+<h3>Minimale Dateigröße<a class="headerlink" href="#minimale-dateigrosze" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die minimale Dateigröße in Byte die eine Datei haben muss um hochgeladen zu werden</p>
+</div>
+<div class="section" id="maximale-dateigrosze">
+<h3>Maximale Dateigröße<a class="headerlink" href="#maximale-dateigrosze" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die maximale Dateigröße in Byte die eine Datei beim Hochladen haben darf. Der Wert 0 deaktiviert diese Beschränkung.
+Beachten Sie dass dieser Wert außerdem durch Ihre Hosting Umgebung beeinflusst wird
+(z.B. <a class="reference external" href="https://www.php.net/manual/de/ini.core.php#ini.upload-max-filesize">php upload_max_filesize</a>)</p>
+</div>
+<div class="section" id="erlaubte-dateitypen">
+<h3>Erlaubte Dateitypen<a class="headerlink" href="#erlaubte-dateitypen" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Gibt an welche Dateiendungen von den Kunden hochgeladen werden dürfen. Achten Sie darauf nur unbedingt notwendige Endungen
+anzugeben, es könnte sonst zu Angriffen durch manipulierte Scripts oder Viren kommen. Aus Sicherheitsgründen muss
+diese Einstellunge gesetzt werden. Geben Sie eine Endung pro Zeile an z.B.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">jpg</span>
+<span class="o">.</span><span class="n">png</span>
+<span class="o">.</span><span class="n">pdf</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cron-job">
+<h2>Cron Job<a class="headerlink" href="#cron-job" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Um nicht von Kunden bestellte Dateien vom Server zu entfernen raten wir Ihnen einen Cronjob einzurichten der
+die unnötigen Dateien löscht. Ein Beispiel Cron könnte wie folgt aussehen</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">0</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">find</span> <span class="o">/</span><span class="n">pfad</span><span class="o">/</span><span class="n">zum</span><span class="o">/</span><span class="n">shop</span><span class="o">/</span><span class="n">source</span><span class="o">/</span><span class="n">out</span><span class="o">/</span><span class="n">pictures</span><span class="o">/</span><span class="n">uploads</span><span class="o">/</span> <span class="o">-</span><span class="n">maxdepth</span> <span class="mi">1</span> <span class="o">-</span><span class="nb">type</span> <span class="n">f</span> <span class="o">-</span><span class="n">mtime</span> <span class="o">+</span><span class="mi">14</span> <span class="o">-</span><span class="n">delete</span>
+</pre></div>
+</div>
+<p>Passen Sie den Pfad entsprechend Ihrem System an, bitte beachten Sie dass ein falscher Pfad zum Verlust von Daten führen kann.
+Der Cron löscht automatisch um Mitternacht alle hochgeladenen Dateien die älter als 14 Tage und nicht bestellt sind.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Modulhandbücher" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Zurück</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Aggrosoft GmbH
+
+    </p>
+  </div>
+    
+    
+    
+    Erstellt mit <a href="http://sphinx-doc.org/">Sphinx</a> mit einem
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    bereitgestellt von <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
