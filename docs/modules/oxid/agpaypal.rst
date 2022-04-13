@@ -1,9 +1,9 @@
 #####################
-Upload Modul
+Paypal Modul
 #####################
 
 Installation
-============
+========================
 Siehe :doc:`/intro/install`
 
 IPN Verbindung
@@ -16,12 +16,12 @@ Nachdem Sie die IPN Verbindung eingerichtet haben sollte das Modul vollständig 
 
 Einrichtung von PayPal Plus
 ====================================
-Schalten Sie zuerst PayPal Plus in Ihrem PayPal Konto frei
-Legen Sie den REST-App unter https://developer.paypal.com/developer/applications/ an
-Gehen Sie auf erstellen REST-App und kopieren Sie die Client ID und Secret (Live Modus) in die entsprechende Eingabefelder bei den PayPal Modul Einstellungen
-Aktivieren Sie die Checkbox "PayPal Plus Aktiv"
-Aktivieren Sie die Checkbox "PayPal Plus Live Modus"
-Legen Sie den täglichen Cronjob "/usr/bin/curl http://www.meinedomain.de/index.php?cl=aspaypal_cron" an
+* Schalten Sie zuerst PayPal Plus in Ihrem PayPal Konto frei
+* Legen Sie den REST-App unter https://developer.paypal.com/developer/applications/ an
+* Gehen Sie auf erstellen REST-App und kopieren Sie die Client ID und Secret (Live Modus) in die entsprechende Eingabefelder bei den PayPal Modul Einstellungen
+* Aktivieren Sie die Checkbox "PayPal Plus Aktiv"
+* Aktivieren Sie die Checkbox "PayPal Plus Live Modus"
+* Legen Sie den täglichen Cronjob `"/usr/bin/curl http://www.meinedomain.de/index.php?cl=aspaypal_cron"` an
 
 Einstellungen
 ========================
@@ -88,7 +88,7 @@ Warenkorb an Paypal übergeben
 Übergibt die kompletten Inhalte des Warenkorbs an PayPal.
 
 PayPal-Button auf der Details-Seite anzeigen
---------------------------------------
+--------------------------------------------------------
 Zeigt den PayPal Express Button direkt auf der Detailseite an, der Kunde kann Artikel dann direkt von dort über PayPal kaufen.
 
 Testserver URL
