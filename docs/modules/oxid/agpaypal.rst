@@ -26,7 +26,9 @@ Legen Sie den täglichen Cronjob "/usr/bin/curl http://www.meinedomain.de/index.
 Einstellungen
 ========================
 Im Admin wird ein neuer Punkt Aggrosoft -> Paypal Modul gezeigt, unter dem alle Einstellungsmöglichkeiten zu finden sind.
+
 E-Mail Adresse Paypal Händlerkonto
+---------------------------------------------------------
 Ist die E-Mail Adresse an die die Zahlungen Ihrer Kunden gesendet werden sollen. Dieses Konto wird später auch für die IPN Verbindung eingerichtet.
 
 Live Modus
