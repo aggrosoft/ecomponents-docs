@@ -3,7 +3,10 @@ Paypal Modul 2.0
 #####################
 
 .. note::
-   Diese Dokumentation ist nur für die neue PayPal Commerce Integration gültig (Aggrosoft PayPal 2.0 / aggrosoft/oxid-agpaypal)
+   Diese Dokumentation ist nur für die neue PayPal Commerce Integration gültig
+
+   Composer Paket: ``aggrosoft/oxid-agpaypal``
+
    Für ältere Shop Installation und vorhandene Installationen prüfen Sie bitte die :doc:`Dokumentation des Vorgänger Moduls</modules/oxid/agpaypal>`
 
 Installation
@@ -12,12 +15,16 @@ Siehe :doc:`/intro/install`
 
 REST App anlegen
 ====================================
-* Legen Sie eine REST-App unter https://developer.paypal.com/developer/applications/ an
-* Klicken Sie auf "Live" - klicken Sie auf "Create App" um eine neue App anzulegen. Den Namen der Applikation können Sie frei wählen. Kopieren Sie die Client ID und Client Secret in die entsprechende Eingabefelder der Modul Einstellungen.
+Legen Sie eine REST-App im `PayPal Developer Center <https://developer.paypal.com/developer/applications/>`__ an.
+
+Hierzu klicken Sie auf :guilabel:`Live`, anschließend :guilabel:`Create App` um eine neue App anzulegen.
+Den Namen der Applikation können Sie frei wählen.
+Kopieren Sie die Client ID und Client Secret in die entsprechende Eingabefelder der Modul Einstellungen.
 
 Einstellungen
 ========================
-Die Moduleinstellungen werden wie gewohnt unter "Einstellungen" => "Module" => "Aggrosoft PayPal 2.0" => "Einstell." eingetragen.
+Die Moduleinstellungen werden wie gewohnt, im Oxid eShop Admin Bereich,
+unter :menuselection:`Einstellungen --> Module --> Aggrosoft PayPal 2.0 --> Einstell.` eingetragen.
 
 Zugangsdaten
 ~~~~~~~~~~~~~~~
@@ -61,18 +68,19 @@ Zahlungsarten definieren
 ========================
 Das Modul generiert während der Installation keine Zahlungsarten, diese müssen von Ihnen angelegt werden.
 Legen Sie für jede gewünschte Zahlungsart (PayPal, Kreditkarte, Rechnung, IDEAL, EPS etc.) eine separate Zahlungsart an.
-(Siehe `Oxid eShop Handbuch<https://docs.oxid-esales.com/eshop/de/6.2/einrichtung/zahlungsarten/zahlungsarten.html>`_
+(Siehe `Oxid eShop Handbuch <https://docs.oxid-esales.com/eshop/de/6.2/einrichtung/zahlungsarten/zahlungsarten.html>`__)
 
 Legen Sie bei den Zahlungsarten im vom Modul erzeugten Feld *PayPal Zahlungsmethode* die gewünschte PayPal Zahlungsart.
 
-.. note::
+.. attention::
    Um die PayPal Express Funktionen zu nutzen (Kauf direkt aus Detailseite/Warenkorb) **muss** eine Zahlungsart existieren
-   bei der das Feld *PayPal Zahlungsmethode* mit dem Wert *PayPal* belegt ist.
+   bei der das Feld :guilabel:`PayPal Zahlungsmethode` mit dem Wert :guilabel:`PayPal` belegt ist.
 
 .. warning::
    Achten Sie darauf die Zahlungsart mit den entsprechend von PayPal erlaubten Ländern zu verknüpfen - EPS ist zum Beispiel
    nur für Kunden aus Österreich verfügbar. Sollten Sie die Zahlungsart einem deutschen Kunden anbieten führt dies zu einer
    Fehlermeldung.
 
+.. note::
    Bestimmte Zahlungsarten müssen separat für Ihren PayPal Account freigeschalten werden (Kreditkarte, Rechnung) - wenden
    Sie sich bei Fragen hierzu an den PayPal Händler Support.
