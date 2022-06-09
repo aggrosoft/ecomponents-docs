@@ -1,6 +1,10 @@
 #####################
-Paypal Modul
+Paypal Modul (legacy)
 #####################
+
+.. note::
+   Diese Dokumentation ist nur die veraltete PayPal Plus / IPN Integration gültig (Aggrosoft PayPal Modul / aggrosoft/oxid-aspaypal)
+   Für neue Shop Installation prüfen Sie bitte die :doc:`Dokumentation des Aggrosoft PayPal 2.0 Moduls</modules/oxid/agpaypal2>`
 
 Installation
 ========================
