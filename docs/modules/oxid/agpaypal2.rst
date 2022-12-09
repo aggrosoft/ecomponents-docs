@@ -15,6 +15,9 @@ Siehe :doc:`/intro/install`
 
 REST App anlegen
 ====================================
+.. warning::
+   Legen Sie unbedingt eine neue App für das PayPal Modul an, verwenden Sie keine vorhandene App!
+
 Legen Sie eine REST-App im `PayPal Developer Center <https://developer.paypal.com/developer/applications/>`__ an.
 
 Hierzu klicken Sie auf :guilabel:`Live`, anschließend :guilabel:`Create App` um eine neue App anzulegen.
@@ -64,6 +67,61 @@ Bestimmt wie viele Informationen zur Kommunikation mit PayPal in der Datei logs/
 Sie können zwischen Fehlern, allen Anfragen und keinem Logging wählen - im Live Betrieb sollte das Level maximal
 auf "Fehler" stehen. Beachten Sie bitte dass die Log Datei nicht automatisch gelöscht oder bereinigt wird.
 
+Express Button in Detailseite anzeigen
+--------------------------------------------------------------------------
+Zeigt den PayPal Express Checkout Button auf der Produktdetailseite
+
+Express Button im Warenkorb anzeigen
+--------------------------------------------------------------------------
+Zeigt den PayPal Express Checkout Button im Warenkorb
+
+Ratenkauf Infos in Detailseite anzeigen
+--------------------------------------------------------------------------
+Zeigt Informationen zu Ratenkauf und Später Bezahlen auf der Produktdetailseite
+
+Ratenkauf Infos im Warenkorb anzeigen
+--------------------------------------------------------------------------
+Zeigt Informationen zu Ratenkauf und Später Bezahlen im Warenkorb
+
+Im letzten Schritt weiterleiten
+--------------------------------------------------------------------------
+Anstatt ein Popup zu öffnen wird der Kunde von der Seite zu PayPal oder dem Payment Provider weitergeleitet,
+in diesem Modus sind eventuell nicht alle Funktionen verfügbar.
+
+Darstellung
+~~~~~~~~~~~~~~~
+
+Zusätzliche CSS Datei für Darstellung der Zahlungsarten laden
+--------------------------------------------------------------------------
+Wenn aktiv wird eine zusätzliche CSS Datei eingebunden um die Darstellung der
+Zahlungsart Auswahl zu verbessern. Nur kompatibel mit Standard Wave Theme.
+
+Aktivierte Zahlungsarten für PayPal Express Buttons
+--------------------------------------------------------------------------
+Liste mit Zahlungsarten die für PayPal Express Buttons angezeigt werden sollen.
+Wird automatisch ermittelt wenn nicht gesetzt. Ein Wert pro Zeile.
+Eine Liste der Werte finden Sie in der `PayPal Dokumentation<https://developer.paypal.com/sdk/js/configuration/#link-enablefunding>`__.
+
+Deaktivierte Zahlungsarten für PayPal Express Buttons
+--------------------------------------------------------------------------
+Liste mit Zahlungsarten die für PayPal Express Buttons nicht angezeigt werden sollen.
+Ein Wert pro Zeile. Eine Liste der Werte finden Sie in der  `PayPal Dokumentation<https://developer.paypal.com/sdk/js/configuration/#link-enablefunding>`__.
+
+
+Style Optionen PayPal Express Button Detailseite / Warenkorbseite
+--------------------------------------------------------------------------
+Beeinflusst das Aussehen des PayPal Express Buttons auf der Detail- bzw. Warenkorbseite.
+Format :guilabel:`Schlüssel => Wert`, eine Angabe pro Zeile.
+
+Alle erlaubten Optionen finden Sie in der  `PayPal Dokumentation<https://developer.paypal.com/sdk/js/reference/#link-style>`__.
+
+Beispiel für blaue, rechteckige, vertikal orientierte Buttons:
+
+.. code::
+    layout => vertical
+    color => blue
+    shape => rect
+
 Zahlungsarten definieren
 ========================
 Das Modul generiert während der Installation keine Zahlungsarten, diese müssen von Ihnen angelegt werden.
@@ -71,6 +129,8 @@ Legen Sie für jede gewünschte Zahlungsart (PayPal, Kreditkarte, Rechnung, IDEA
 (Siehe `Oxid eShop Handbuch <https://docs.oxid-esales.com/eshop/de/6.2/einrichtung/zahlungsarten/zahlungsarten.html>`__)
 
 Legen Sie bei den Zahlungsarten im vom Modul erzeugten Feld *PayPal Zahlungsmethode* die gewünschte PayPal Zahlungsart.
+
+Das Feld *PayPal Einstiegsseite* bestimmt ob der Kunde vorzugsweise auf der PayPal Login Seite landen soll oder nicht.
 
 .. attention::
    Um die PayPal Express Funktionen zu nutzen (Kauf direkt aus Detailseite/Warenkorb) **muss** eine Zahlungsart existieren
